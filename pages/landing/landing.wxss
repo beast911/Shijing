@@ -1,0 +1,9 @@
+/* pages/home/home.wxss */
+@import "../../lib/weui.wxss";
+body {
+  background-image:url('../../resources/home.jpg');
+}
+image {
+  width: 100vw;
+  height: 100vh;
+}

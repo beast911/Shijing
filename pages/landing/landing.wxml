@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<view id="main" style="text-align:center">
+  <image bindtap='openContents' src="{{homeImgSrc}}"></image>
+</view>

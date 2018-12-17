@@ -1,9 +1,12 @@
 {
-  "pages": [],
+  "pages": [
+    "pages/landing/landing",
+    "pages/home/home"
+  ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "诗经",
     "navigationBarTextStyle": "black"
   }
 }
