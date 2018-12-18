@@ -1,2 +1,8 @@
 <!--pages/contents/contents.wxml-->
-<text>pages/contents/contents.wxml</text>
+<view>
+ {{poems.poems[0].chapters[0].poems[0].originalText[0]}}
+ {{poems.poems[0].chapters[0].poems[0].originalText[1]}}
+ {{poems.poems[0].chapters[0].poems[0].originalText[2]}}
+ {{poems.poems[0].chapters[0].poems[0].originalText[3]}}
+ {{poems.poems[0].chapters[0].poems[0].originalText[4]}}
+</view>

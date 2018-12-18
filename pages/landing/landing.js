@@ -5,7 +5,7 @@ Page({
    * Page initial data
    */
   data: {
-    homeImgSrc: '../../resources/cover.bmp'
+    homeImgSrc: '../../resources/cover.png'
   },
 
   /**

@@ -1,11 +1,13 @@
 // pages/contents/contents.js
+const initialData = require('../../resources/data.js');
+console.log(initialData);
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
+    poems: initialData
   },
 
   /**
