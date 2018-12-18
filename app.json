@@ -1,7 +1,10 @@
 {
   "pages": [
     "pages/landing/landing",
-    "pages/home/home"
+    "pages/home/home",
+    "pages/chapters/chapters",
+    "pages/poem/poem",
+    "pages/poems/poems"
   ],
   "window": {
     "backgroundTextStyle": "light",

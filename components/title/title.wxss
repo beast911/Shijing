@@ -1,0 +1,5 @@
+/* components/title/title.wxss */
+
+.inner {
+  text-align:center;
+}

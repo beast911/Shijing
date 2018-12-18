@@ -1,12 +1,11 @@
-// pages/contents/contents.js
-const app = getApp();
+// pages/chapters/chapters.js
 Page({
 
   /**
    * Page initial data
    */
   data: {
-    poems: app.poems
+
   },
 
   /**

@@ -1,8 +1,7 @@
 <!--pages/contents/contents.wxml-->
-<view>
- {{poems.poems[0].chapters[0].poems[0].originalText[0]}}
- {{poems.poems[0].chapters[0].poems[0].originalText[1]}}
- {{poems.poems[0].chapters[0].poems[0].originalText[2]}}
- {{poems.poems[0].chapters[0].poems[0].originalText[3]}}
- {{poems.poems[0].chapters[0].poems[0].originalText[4]}}
+<title inner-text="{{poems.poems[0].chapters[0].poems[0].title}}"></title>
+<view style="padding-top:25px">
+  <view style="text-align:center" wx:for="{{poems.poems[0].chapters[0].poems[0].originalText}}">
+    {{item}}
+  </view>
 </view>
