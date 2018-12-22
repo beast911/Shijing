@@ -5,14 +5,18 @@ Page({
    * Page initial data
    */
   data: {
-
+    chapter: {}
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    console.log(this.data.chapter);
+    const chapterFromStorage = wx.getStorageSync('chapter');
+    this.setData({
+      chapter: chapterFromStorage
+    })
   },
 
   /**

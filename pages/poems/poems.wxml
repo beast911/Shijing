@@ -1,2 +1,10 @@
 <!--pages/poems/poems.wxml-->
-<text>pages/poems/poems.wxml</text>
+<view class="background chapter">
+  <text class="chapter-center title">{{chapter.title}}</text>
+  <view class="chapter-center chapter scroll">
+  <view wx:for="{{chapter.poems}}" class="center">
+    <view class="label"></view>
+    <text id="{{index}}">{{item.title}}</text>
+  </view>
+  </view>
+</view>

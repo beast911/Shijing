@@ -1,1 +1,37 @@
 /* pages/poems/poems.wxss */
+@import "../../lib/app.wxss";
+
+.chapter-center {
+  align-self:center;
+  margin: 0 auto;
+  padding-bottom:20px;
+  padding-top:20px;
+  font-size:30px;
+}
+
+.scroll {
+  overflow:auto;
+}
+
+.title {
+  font-weight:bold;
+}
+
+.chapter {
+  flex-direction: column;
+}
+
+.center {
+  margin: 0 auto auto 30px;
+  padding-bottom:45px;
+}
+
+.label {
+  width:5px;
+  height:5px;
+  background-color:black;
+  border-radius:50%;
+  position:relative;
+  top:15px;
+  right:7px;
+}

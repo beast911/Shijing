@@ -1,7 +1,15 @@
 <!--pages/contents/contents.wxml-->
-<title inner-text="{{poems.poems[0].chapters[0].poems[0].title}}"></title>
-<view style="padding-top:25px">
-  <view style="text-align:center" wx:for="{{poems.poems[0].chapters[0].poems[0].originalText}}">
-    {{item}}
+<view class="background books">
+  <view class="navbar">
+    <block wx:for="{{books}}">
+      <view class="book-header {{item.selected}}" bindtap="loadChapters" id="{{index}}">
+        <text class="text">{{item.bookName}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="list-chapters">
+    <view class="chapter-box" wx:for="{{books[selectedTab].chapters}}" bindtap="loadPoems" id="{{index}}">
+      <text>{{item.title}}</text>
+    </view>
   </view>
 </view>

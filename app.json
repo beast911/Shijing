@@ -2,14 +2,13 @@
   "pages": [
     "pages/landing/landing",
     "pages/home/home",
-    "pages/chapters/chapters",
     "pages/poem/poem",
     "pages/poems/poems"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "诗经",
+    "navigationBarTitleText": "《诗经》",
     "navigationBarTextStyle": "black"
   }
 }

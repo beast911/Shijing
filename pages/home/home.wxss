@@ -1,1 +1,52 @@
 /* pages/contents/contents.wxss */
+@import "../../lib/app.wxss";
+
+page {
+  font-size:25px;
+}
+
+.navbar {
+  justify-content: space-evenly;
+  width:100%;
+  padding-top:10px;
+}
+
+.books {
+  flex-direction: column;
+}
+
+.list-chapters {
+  display:block;
+  margin:10% auto 0 auto;
+  width:80%;
+}
+
+.chapter-box {
+  display:inline-block;
+  width:40%;
+  min-width:40%;
+  margin:auto;
+  text-align:center;
+  padding:15px;
+  box-shadow:inset 1px 1px 8px #000;
+  background-color:#fff;
+}
+
+.book-header {
+  width:5em;
+  height:1.5em;
+}
+
+.book-header.active {
+  background-color:white;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.text {
+  margin:auto;
+  text-align:center;
+}
+
+.book-chapters {
+  padding-top:50px;
+}

@@ -4,9 +4,7 @@ Page({
   /**
    * Page initial data
    */
-  data: {
-    homeImgSrc: '../../resources/cover.png'
-  },
+  data: {},
 
   /**
    * Open the main content page

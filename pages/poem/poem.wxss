@@ -1,1 +1,2 @@
 /* pages/poem/poem.wxss */
+@import "../../lib/app.wxss";

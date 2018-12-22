@@ -1,4 +1,13 @@
 <!--pages/home/home.wxml-->
-<view id="main">
-  <image bindtap='openContents' src="{{homeImgSrc}}"></image>
+<view class="background" bindtap='openContents'>
+  <text class="centering title">
+    《诗 经》
+  </text>
+  <text class="centering details">
+    又称《诗三百》
+中国最早的诗歌总集
+  </text>
+  <text class="footer">
+    旸 & 双
+  </text>
 </view>
