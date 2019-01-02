@@ -1,2 +1,21 @@
 <!--pages/poem/poem.wxml-->
-<text>pages/poem/poem.wxml</text>
+<view class="background"></view>
+<view class="poem">
+  <text class="poem-center title">{{poem.title}}</text>
+  <view class="scroll">
+    <view class="poem-center poem">
+      <view wx:for="{{poem.originalText}}" class="center">
+        <text class="original-text" id="{{index}}">{{item}}</text>
+      </view>
+    </view>
+    <!-- Tab view -->
+      <view class="tab-bar">
+        <view class="tab-item" bindtap="loadDetails" id="simple"><text>注释</text></view>
+        <view class="tab-item" bindtap="loadDetails" id="analysis"><text>译文</text></view>
+        <view class="tab-item" bindtap="loadDetails" id="note"><text>赏析</text></view>
+      </view>
+      <view>
+      {{details}}
+      </view>
+  </view>
+</view>

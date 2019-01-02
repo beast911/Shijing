@@ -1,5 +1,6 @@
 <!--pages/contents/contents.wxml-->
-<view class="background books">
+<view class="background"></view>
+<view class="books">
   <view class="navbar">
     <block wx:for="{{books}}">
       <view class="book-header {{item.selected}}" bindtap="loadChapters" id="{{index}}">

@@ -18,18 +18,17 @@ page {
 .list-chapters {
   display:block;
   margin:10% auto 0 auto;
-  width:80%;
+  width:90%;
 }
 
 .chapter-box {
   display:inline-block;
   width:40%;
   min-width:40%;
-  margin:auto;
-  text-align:center;
-  padding:15px;
-  box-shadow:inset 1px 1px 8px #000;
-  background-color:#fff;
+  margin:auto 25rpx 20rpx 19rpx;
+  box-shadow:inset 6rpx 0 0 #D9D1B0;
+  padding-left:25rpx;
+  padding-bottom:15rpx;
 }
 
 .book-header {
@@ -40,6 +39,7 @@ page {
 .book-header.active {
   background-color:white;
   box-shadow: 0 8px 6px -6px black;
+  border-radius: 5px;
 }
 
 .text {

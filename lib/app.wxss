@@ -13,4 +13,10 @@ view {
   width:100vw;
   height:100vh;
   position:fixed;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.full-opaque {
+  opacity: 1.0;
 }

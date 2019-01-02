@@ -1,2 +1,44 @@
 /* pages/poem/poem.wxss */
 @import "../../lib/app.wxss";
+
+.poem-center {
+  align-self:center;
+  margin:0 auto;
+  padding-top:20px;
+  font-size:18px;
+}
+
+.scroll {
+  overflow:auto;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size:23px;
+}
+
+.poem {
+  flex-direction: column;
+}
+
+.center {
+  margin: 0 30px auto 30px;
+  padding-bottom:15px;
+}
+
+.original-text {
+  text-align:center;
+}
+
+.tab-bar {
+  margin-top: 2px;
+  border: 0.5px solid;
+  background: #eed;
+  width: 100%;
+  margin-left:5px;
+  margin-right:5px;
+}
+
+.tab-item {
+  margin: auto;
+}
