@@ -32,13 +32,21 @@
 
 .tab-bar {
   margin-top: 2px;
-  border: 0.5px solid;
-  background: #eed;
   width: 100%;
   margin-left:5px;
   margin-right:5px;
 }
 
+.details {
+  margin-top:20rpx;
+  margin-left:30rpx;
+  margin-right:30rpx;
+}
+
 .tab-item {
   margin: auto;
+  color:#B8AC97;
+}
+.active {
+  color:#692F08;
 }

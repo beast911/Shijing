@@ -10,12 +10,24 @@
     </view>
     <!-- Tab view -->
       <view class="tab-bar">
-        <view class="tab-item" bindtap="loadDetails" id="simple"><text>注释</text></view>
-        <view class="tab-item" bindtap="loadDetails" id="analysis"><text>译文</text></view>
-        <view class="tab-item" bindtap="loadDetails" id="note"><text>赏析</text></view>
+        <view class="tab-item {{tabItems.note.selected}}" bindtap="loadDetails" id="note"><text>注释</text></view>
+        <view class="tab-item {{tabItems.simple.selected}}" bindtap="loadDetails" id="simple"><text>题解</text></view>
+        <view class="tab-item {{tabItems.analysis.selected}}" bindtap="loadDetails" id="analysis"><text>赏析</text></view>
       </view>
-      <view>
-      {{details}}
+      <view class="details">
+        <block wx:if="{{tabItems.analysis.selected}}">
+          {{details}}
+        </block>
+        <block wx:if="{{tabItems.simple.selected}}">
+          <view class="poem-center poem">
+            <view wx:for="{{poem.simplifiedText}}" class="center">
+              <text class="original-text" id="{{index}}">{{item}}</text>
+            </view>
+          </view>
+        </block>
+        <block wx:if="{{tabItems.note.selected}}">
+          <view>NOTE</view>
+        </block>
       </view>
   </view>
 </view>
