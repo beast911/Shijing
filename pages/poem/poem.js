@@ -40,7 +40,7 @@ Page({
         this.data.tabItems["analysis"].selected = "active";
         break;
       case "note":
-        this.data.details = "Note";
+        this.data.details = this.data.poem.note ? this.data.poem.note : "NOTE";
         this.data.tabItems["note"].selected = "active";
         break;
     };
@@ -54,7 +54,7 @@ Page({
     const poemFromStorage = wx.getStorageSync('poem');
     this.setData({
       poem: poemFromStorage,
-      details: "Simple"
+      details: "Note"
     })
   }
 })

@@ -26,7 +26,11 @@
           </view>
         </block>
         <block wx:if="{{tabItems.note.selected}}">
-          <view>NOTE</view>
+          <view class="poem-center poem">
+            <view wx:for="{{poem.note}}" class="center">
+              {{index+1}}、 <text class="original-text" id="{{index}}">{{item}}</text>
+            </view>
+          </view>
         </block>
       </view>
   </view>
