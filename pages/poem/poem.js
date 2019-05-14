@@ -21,6 +21,18 @@ Page({
     details: ""
   },
 
+  onShareAppMessage: function () {
+    return {
+      title: '',
+      success: function (res) {
+        // Forwarding successful
+      },
+      fail: function (res) {
+        // Forwarding failed
+      }
+    }
+  },
+
   loadDetails: function(e) {
     for (let prop in this.data.tabItems) {
       if (this.data.tabItems.hasOwnProperty(prop)) {
@@ -51,7 +63,14 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    const poemFromStorage = wx.getStorageSync('poem');
+    let poemFromStorage = wx.getStorageSync('poem');
+    const chapterFromStorage = wx.getStorageSync('chapter');
+    const splitChapterTitle = chapterFromStorage.title.split('·');
+    chapterFromStorage.title = splitChapterTitle[0];
+    if (splitChapterTitle[1]) {
+      chapterFromStorage.title = splitChapterTitle[0] + ' · ' + splitChapterTitle[1];
+    }
+    poemFromStorage.title = chapterFromStorage.title + ' · ' + poemFromStorage.title;
     this.setData({
       poem: poemFromStorage,
       details: "Note"

@@ -10,5 +10,6 @@
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "《诗经》",
     "navigationBarTextStyle": "white"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
