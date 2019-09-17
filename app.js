@@ -1,4 +1,3 @@
-const initialData = require('./resources/data.js');
 wx.cloud.init();
 wx.clearStorageSync();
 wx.showLoading({
