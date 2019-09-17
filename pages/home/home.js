@@ -2,12 +2,11 @@
 const app = getApp();
 Page({
 
-  /**
-   * Page initial data
-   */
-  data: {
-    books: app.poems.poems,
-    selectedTab: 0
+  onLoad: function(op) {
+    this.data = {};
+    this.data.books = app.poems;
+    this.data.selectedTab = 0;
+    this.setData(this.data);
   },
 
   loadPoems: function(e) {
