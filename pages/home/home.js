@@ -10,10 +10,8 @@ Page({
   },
 
   loadPoems: function(e) {
-    wx.clearStorageSync();
-    wx.setStorageSync('chapter', this.data.books[this.data.selectedTab].chapters[e.currentTarget.id]);
     wx.navigateTo({
-      url: '../poems/poems?id=' + e.currentTarget.id,
+      url: '../poems/poems?book=' + this.data.selectedTab + '&chpt=' + e.currentTarget.id
     })
   },
 

@@ -9,9 +9,8 @@ Page({
   },
 
   loadPoem: function(e) {
-    wx.setStorageSync('poem', this.data.chapter.poems[e.currentTarget.id]);
     wx.navigateTo({
-      url: '../poem/poem?id=' + e.currentTarget.id,
+      url: '../poem/poem?poem=' + e.currentTarget.id + '&chptTitle=' + this.data.chapter.title + '&chpt=' + this.data.chptId + '&book=' + this.data.book
     })
   },
 
@@ -19,14 +18,17 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    const chapterFromStorage = wx.getStorageSync('chapter');
-    const splitChapterTitle = chapterFromStorage.title.split('·');
-    chapterFromStorage.title = splitChapterTitle[0];
+    const app = getApp();
+    const chapter = app.poems[options.book].chapters[options.chpt];
+    const splitChapterTitle = chapter.title.split('·');
+    chapter.title = splitChapterTitle[0];
     if (splitChapterTitle[1]) {
-      chapterFromStorage.title = splitChapterTitle[0] + ' · ' + splitChapterTitle[1];
+      chapter.title = splitChapterTitle[0] + ' · ' + splitChapterTitle[1];
     }
     this.setData({
-      chapter: chapterFromStorage
+      chapter: chapter,
+      book: options.book,
+      chptId: options.chpt
     })
   }
 })

@@ -1,7 +1,7 @@
 <!--pages/poem/poem.wxml-->
 <view class="background"></view>
 <view class="poem">
-  <text class="poem-center title">{{poem.title}}</text>
+  <text class="poem-center title">{{title}}</text>
   <view class="scroll">
     <view class="poem-center poem">
       <view wx:for="{{poem.originalText}}" class="center">

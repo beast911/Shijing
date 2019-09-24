@@ -30,13 +30,50 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/landing/landing",
+					"pathName": "pages/landing/landing",
+					"query": "poem=1&chptTitle= 国风 · 鄘风&chpt=3&book=0",
+					"scene": 1036,
+					"referrerInfo": {
+						"appId": "wxad59e0ce01090bf3"
+					}
+				},
+				{
+					"id": -1,
+					"name": "pages/poem/poem",
+					"pathName": "pages/poem/poem",
+					"query": "poem=1&chptTitle= 国风 · 鄘风&chpt=3&book=0",
+					"scene": 1037,
+					"referrerInfo": {
+						"extraData": "{}"
+					}
+				},
+				{
+					"id": 2,
+					"name": "pages/poem/poem",
+					"pathName": "pages/poem/poem",
+					"query": "poem=1&chptTitle= 国风 · 鄘风&chpt=3&book=0",
+					"scene": 1044,
+					"shareInfo": {
+						"groupName": "测试模拟群0",
+						"shareName": "m5qw-j6pgkrTcIjg5hiAN9TacVY4OpgxFxcrcv0IVUQ@cr4dev",
+						"shareKey": "I5mWR2jDT6ofs1be8E-qPrYePDYLPcFl8_Ls_Bd7huGz_vMYWtIRJaIQ6_S1LQSnbBuqFJUlN-OIoJigSarWeQ~~"
+					}
+				}
+			]
 		}
 	}
 }

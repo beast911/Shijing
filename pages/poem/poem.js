@@ -1,4 +1,5 @@
 // pages/poem/poem.js
+const app = getApp();
 Page({
 
   /**
@@ -44,7 +45,7 @@ Page({
     switch (e.currentTarget.id) {
       // pick the category from data loaded
       case "simple": 
-        this.data.details = "Simple";
+        this.data.details = this.data.simple;
         this.data.tabItems["simple"].selected = "active";
         break;
       case "analysis":
@@ -59,21 +60,36 @@ Page({
     this.setData(this.data);
   },
 
+  setInitialData: function(options, poems) {
+    const poemFromStorage = poems[options.book].chapters[options.chpt].poems[options.poem];
+    const splitChapterTitle = poems[options.book].chapters[options.chpt].title.split('·');
+    let chptTitle = splitChapterTitle[0];
+    let poemTitle = poemFromStorage.title;
+
+    if (splitChapterTitle[1]) {
+      chptTitle = splitChapterTitle[0].trim() + ' · ' + splitChapterTitle[1].trim();
+    }
+    let title = chptTitle + ' · ' + poemTitle;
+    this.setData({
+      poem: poemFromStorage,
+      details: "Note",
+      title: title
+    })
+  },
+
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    let poemFromStorage = wx.getStorageSync('poem');
-    const chapterFromStorage = wx.getStorageSync('chapter');
-    const splitChapterTitle = chapterFromStorage.title.split('·');
-    chapterFromStorage.title = splitChapterTitle[0];
-    if (splitChapterTitle[1]) {
-      chapterFromStorage.title = splitChapterTitle[0] + ' · ' + splitChapterTitle[1];
+    if(app.poems == undefined) {
+      // case when coming directly from mini program share
+      wx.cloud.database().collection('shijing').get().then(res => {
+        wx.hideLoading();
+        getApp().poems = res.data;
+        this.setInitialData(options, res.data);
+      })
+    } else {
+        this.setInitialData(options, app.poems);
     }
-    poemFromStorage.title = chapterFromStorage.title + ' · ' + poemFromStorage.title;
-    this.setData({
-      poem: poemFromStorage,
-      details: "Note"
-    })
   }
 })

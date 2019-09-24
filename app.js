@@ -6,11 +6,13 @@ wx.showLoading({
 });
 
 App({
-  onLaunch: function () {
+  onLaunch: function (options) {
     // Triggered after the Mini Program starts
-    wx.cloud.database().collection('shijing').get().then( res => {
-      wx.hideLoading();
-      this.poems = res.data;
-    })
+    if (options.path.endsWith('landing')) {
+      wx.cloud.database().collection('shijing').get().then(res => {
+        wx.hideLoading();
+        this.poems = res.data;
+      })
+    }
   }
 })
