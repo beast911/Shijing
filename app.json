@@ -11,5 +11,6 @@
     "navigationBarTitleText": "《诗经》",
     "navigationBarTextStyle": "white"
   },
+  "cloud": true,
   "sitemapLocation": "sitemap.json"
 }

@@ -13,4 +13,5 @@
       <text>{{item.title}}</text>
     </view>
   </view>
+  <ad id="home-page-ad" unit-id="adunit-18e6ea91dffde91f"></ad>
 </view>

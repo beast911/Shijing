@@ -33,15 +33,14 @@ page {
 }
 
 .book-header {
-  width:5em;
+  width:3.5em;
   height:1.5em;
   font-size:20px;
 }
 
 .book-header.active {
-  background-color:white;
-  box-shadow: 0 8px 6px -6px black;
-  border-radius: 5px;
+  border-bottom: 2px solid;
+  border-bottom-color: #C9C9C8;
 }
 
 .text {
@@ -51,4 +50,10 @@ page {
 
 .book-chapters {
   padding-top:50px;
+}
+
+#home-page-ad {
+  position:absolute;
+  bottom: 0;
+  margin-bottom: 30px;
 }
