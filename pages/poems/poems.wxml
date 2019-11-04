@@ -8,4 +8,5 @@
     <text class="poem-list highlight" id="{{index}}" bindtap="loadPoem">{{item.originalText[0]}}</text>
   </view>
   </view>
+  <ad id="poems-page-ad" unit-id="adunit-76ca059724410ae5"></ad>
 </view>

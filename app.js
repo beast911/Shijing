@@ -12,6 +12,11 @@ App({
       wx.cloud.database().collection('shijing').get().then(res => {
         wx.hideLoading();
         this.poems = res.data;
+        setTimeout(() => {
+          wx.navigateTo({
+            url: '../home/home',
+          })
+        }, 1500);
       })
     }
   }

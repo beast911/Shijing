@@ -50,3 +50,9 @@
 .active {
   color:#692F08;
 }
+
+#poem-page-ad {
+  position: absolute;
+  bottom:0;
+  margin-bottom: 30px;
+}

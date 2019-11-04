@@ -1,5 +1,5 @@
 <!--pages/home/home.wxml-->
-<view class="background full-opaque" bindtap='openContents'></view>
+<view class="background full-opaque"></view>
 <view bindtap='openContents'>
   <text class="centering title">
     《诗 经》
