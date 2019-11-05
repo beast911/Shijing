@@ -11,6 +11,7 @@
 .scroll {
   overflow:auto;
   flex-wrap: wrap;
+  height: 81vh;
 }
 
 .title {
@@ -52,7 +53,7 @@
 }
 
 #poem-page-ad {
-  position: absolute;
-  bottom:0;
   margin-bottom: 30px;
+  position: fixed;
+  bottom: 0;
 }

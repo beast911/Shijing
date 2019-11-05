@@ -3,7 +3,7 @@
 
 .chapter-center {
   margin-left:30rpx;
-  height:85vh;
+  height:81vh;
 }
 
 .scroll {
@@ -52,7 +52,7 @@
 }
 
 #poems-page-ad {
-  position: absolute;
-  bottom: 0;
   margin-bottom: 30px;
+  position: fixed;
+  bottom: 0;
 }
