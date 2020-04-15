@@ -18,17 +18,17 @@ Page({
       "analysis": {
         text: ""
       }
-  },
+    },
     details: ""
   },
 
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
     return {
       title: '',
-      success: function (res) {
+      success: function(res) {
         // Forwarding successful
       },
-      fail: function (res) {
+      fail: function(res) {
         // Forwarding failed
       }
     }
@@ -44,7 +44,7 @@ Page({
     }
     switch (e.currentTarget.id) {
       // pick the category from data loaded
-      case "simple": 
+      case "simple":
         this.data.details = this.data.simple;
         this.data.tabItems["simple"].selected = "active";
         break;
@@ -80,8 +80,8 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
-  onLoad: function (options) {
-    if(app.poems == undefined) {
+  onLoad: function(options) {
+    if (app.poems == undefined) {
       // case when coming directly from mini program share
       wx.cloud.database().collection('shijing').get().then(res => {
         wx.hideLoading();
@@ -89,7 +89,7 @@ Page({
         this.setInitialData(options, res.data);
       })
     } else {
-        this.setInitialData(options, app.poems);
+      this.setInitialData(options, app.poems);
     }
   }
 })

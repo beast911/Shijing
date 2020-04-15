@@ -8,7 +8,6 @@ view {
 }
 
 .background {
-  background-image: url("https://7368-shijing-6997e-1300253144.tcb.qcloud.la/background.jpeg?sign=bb485fb0d06b0c91dba282b4a4181574&t=1569229122");
   background-size: cover;
   width:100vw;
   height:100vh;
