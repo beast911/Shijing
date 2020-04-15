@@ -4,18 +4,25 @@ page {
 
 view {
   margin: 1px 1px 1px 1px;
-  display:flex;
+  display: flex;
 }
 
 .background {
   background-size: cover;
-  width:100vw;
-  height:100vh;
-  position:fixed;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
   opacity: 0.4;
   z-index: -1;
 }
 
 .full-opaque {
   opacity: 1.0;
+}
+
+.contact-info {
+  position: fixed;
+  bottom: 25px;
+  right: 15vw;
+  left: 15vw;
 }

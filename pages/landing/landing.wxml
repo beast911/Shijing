@@ -10,4 +10,7 @@
   <text class="centering details bottom">
     中国最早的诗歌总集
   </text>
+  <view class="contact-info">
+    联系我们：<text>baozi_pizza@163.com</text>
+  </view>
 </view>

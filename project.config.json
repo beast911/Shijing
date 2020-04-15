@@ -12,7 +12,7 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.8.2",
+	"libVersion": "2.10.4",
 	"appid": "wxad59e0ce01090bf3",
 	"projectname": "Shijing",
 	"debugOptions": {

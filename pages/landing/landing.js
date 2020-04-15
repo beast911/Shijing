@@ -4,5 +4,14 @@ Page({
   /**
    * Page initial data
    */
-  data: {}
+  data: {},
+  
+  /**
+   * Open the main content page
+   */
+  openContents: function() {
+    wx.navigateTo({
+      url: '../home/home',
+    })
+  }
 })
